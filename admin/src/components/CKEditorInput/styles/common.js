@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export const style = css`
   .ck-word-count {
@@ -10,7 +10,8 @@ export const style = css`
   }
 
   .ck-editor__main {
-    --ck-font-face: "Source Sans Pro", system-ui, Roboto, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    --ck-font-face: 'Source Sans Pro', system-ui, Roboto, 'Helvetica Neue', 'Helvetica', Arial,
+      sans-serif;
     color: var(--ck-color-editor-base-text);
     font-family: var(--ck-font-face);
 
@@ -54,7 +55,7 @@ export const style = css`
       caption-side: bottom;
       color: var(--ck-color-image-caption-text);
       display: table-caption;
-      font-size: .75em;
+      font-size: 0.75em;
       outline-offset: -1px;
       padding: 0.6em;
       word-break: break-word;
@@ -86,11 +87,11 @@ export const style = css`
     }
 
     sub {
-      vertical-align: sub
+      vertical-align: sub;
     }
 
     sup {
-      vertical-align: super
+      vertical-align: super;
     }
 
     // higher specificity needed
@@ -110,5 +111,10 @@ export const style = css`
         transition-duration: 0.2s;
       }
     }
+  }
+
+  // For custom fields
+  .ck-editor-light .ck.ck-content.ck-editor__editable {
+    min-height: 3.5rem !important;
   }
 `;
