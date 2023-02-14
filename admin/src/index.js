@@ -59,6 +59,7 @@ export default {
             },
             name: 'options.preset',
             type: 'select',
+            defaultValue: 'light',
             options: [
               {
                 key: 'light',
@@ -66,7 +67,7 @@ export default {
                 metadatas: {
                   intlLabel: {
                     id: 'ckeditor.preset.light.label',
-                    defaultMessage: 'Light version',
+                    defaultMessage: 'Light',
                   },
                 },
               },
@@ -76,7 +77,7 @@ export default {
                 metadatas: {
                   intlLabel: {
                     id: 'ckeditor.preset.standard.label',
-                    defaultMessage: 'Standard version',
+                    defaultMessage: 'Standard',
                   },
                 },
               },
@@ -93,7 +94,7 @@ export default {
             },
             name: 'options.output',
             type: 'select',
-            defaultValue: 'HTML',
+            defaultValue: 'Markdown',
             options: [
               {
                 key: 'html',
